@@ -50,10 +50,11 @@ li {
 
 .nav-item {
   margin: 0rem 2rem;
+  font-size: 28px;
 }
 
 .nav-link {
-  font-size: 3.7rem;
+  font-size: 1.7rem;
   letter-spacing: 0.3rem;
   position: relative;
   background: -webkit-linear-gradient(rgb(255, 0, 255), rgb(242, 67, 255));
@@ -264,4 +265,70 @@ header{
 }
 
 
+@media screen and (max-width: 780px) {
+	html{
+    height:134vh;
+	  width:100%;
+  }
 
+  .fq{
+    display:flex;
+    margin-left: 10px;
+    flex-direction: row;
+    margin-top: 80px;
+    border: 1px solid rgb(206, 206, 206, .75);
+    background: linear-gradient( 135deg, rgb(152, 152, 152, .5),rgb(226, 226, 226, .1));
+    backdrop-filter: blur(4px);
+    border-radius: 5%;
+    height:500px;
+    width:550px;
+   }
+
+   .container .btn {
+    position: relative;
+    font-family: ND LOGOS;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 75px;
+    margin-top: 180px;
+    margin-left: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+	html{
+    height:134vh;
+	  width:100%;
+  }
+
+  .fq{
+    display:flex;
+    margin-left: 10px;
+    flex-direction: row;
+    margin-top: 80px;
+    border: 1px solid rgb(206, 206, 206, .75);
+    background: linear-gradient( 135deg, rgb(152, 152, 152, .5),rgb(226, 226, 226, .1));
+    backdrop-filter: blur(4px);
+    border-radius: 5%;
+    height:500px;
+    width:500px;
+   }
+
+   .container .btn {
+    position: relative;
+    font-family: ND LOGOS;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 75px;
+    margin-top: 140px;
+    margin-left: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
