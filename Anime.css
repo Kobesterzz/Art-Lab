@@ -1,0 +1,227 @@
+html{
+  height:110vh;
+	width:100%;
+}
+
+body{
+  background: linear-gradient(to right, #000000 , #321532);
+  background-repeat: no-repeat;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+  height:0;
+}
+h1{
+  font-size: 72px;
+  background: -webkit-linear-gradient(rgb(153, 57, 137), rgb(255, 32, 222) );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: SF pro;
+}
+
+h2{
+  font-size: 72px;
+  background: -webkit-linear-gradient(rgb(209, 89, 189), rgb(255, 32, 222));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: SF pro;
+}
+
+.nav-items {
+  display: flex;
+  font-family: moderna;
+  padding-top: 25px;
+}
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  margin: 0rem 2rem;
+  font-size: 28px;
+}
+
+.nav-link {
+  font-size: 1.7rem;
+  letter-spacing: 0.3rem;
+  position: relative;
+  background: -webkit-linear-gradient(rgb(255, 0, 212), rgb(255, 32, 222));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-link::before {
+  content: "";
+  background: linear-gradient(rgb(244, 40, 255), rgb(241, 200, 252));
+  width: 100%;
+  height: 0.05rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 500ms;
+}
+
+.nav-link:hover::before {
+  transform: scaleX(1.1);
+  transform-origin: bottom left;
+}
+
+header{
+  display:flex;
+  background: -webkit-linear-gradient(rgb(0, 0, 0), rgba(95, 84, 95, 0.04));
+  flex-direction: column;
+}
+
+.logo{
+  font-size: 2rem;
+  background: -webkit-linear-gradient(rgb(255, 1, 238), rgb(255, 1, 251));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: ND LOGOS;
+  padding-left: 20px;
+}
+
+.title{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-color: #ec67ea;
+  background: -webkit-linear-gradient(rgb(255, 1, 238), rgb(255, 0, 230));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-body{
+  font-family: NEXT ART;
+  background-image: linear-gradient(rgb(162, 52, 162), rgb(244, 189, 255));
+}
+
+.style1{
+	margin-left: 50px;
+  margin-top: 5px;
+  transition: all .2s ease-in-out; 
+  filter:grayscale(100%);
+}
+
+.style1:hover{
+  filter:grayscale(0%);
+  transform: scale(1.02);
+  
+}
+
+.card:hover > .content-wrap:not(:hover) {
+  filter: blur(4px);
+}
+
+
+.card:hover { 
+transform: scale(1.1); 
+box-shadow: 0 0 50px rgba(255, 0, 255, 0.9);
+}
+
+.style1:hover { 
+  transform: scale(1.05); 
+  box-shadow: 0 0 50px rgba(255, 0, 255, 0.9);
+  filter: grayscale(0%);
+}
+
+.cards {
+ 
+  display: flex;
+   
+  grid-template-columns: repeat(3, 1fr);
+   
+  grid-auto-rows: auto;
+   
+  grid-gap: .25rem;
+   
+  margin-top: 20px;
+
+  width:auto;
+
+
+}
+
+#TraBodyPartCards{
+  display:flex;
+  justify-content: center;
+  column-gap: 80px;
+  margin-left: 190px;
+  margin-top:20px;
+};
+
+#footer{
+	background: linear-gradient( rgba(255, 255, 255, 0.001), black);
+	height:295px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: .5rem;            /* Footer height */
+}
+	
+#footerContent{
+  margin-top: 15px;
+}
+
+
+@media screen and (max-width: 600px) {
+	html{
+		height:180vh;
+		width:100%;
+	}
+
+ .cards{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 80px;
+    row-gap: 30px;
+    margin-right: 240px;
+  }
+
+  #TraBodyPartCards{
+    display:flex;
+    justify-content: column;
+    column-gap: 80px;
+  }
+
+  .nav-link {
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+    position: relative;
+    background: -webkit-linear-gradient(rgb(255, 0, 255), rgb(242, 67, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+
+  .logo{
+    font-size: 1.4rem;
+    background: -webkit-linear-gradient(rgb(255, 1, 238), rgb(255, 0, 251));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: ND LOGOS;
+    padding-left: 20px;
+  }
+};
