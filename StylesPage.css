@@ -21,7 +21,7 @@ h2{
     background: -webkit-linear-gradient(rgb(247, 0, 255), rgb(247, 0, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 20px;
+    font-size: 50px;
     font-family:SF pro;
     margin-left: 60px;
 }
@@ -175,7 +175,7 @@ a {
 
 @media screen and (max-width: 600px) {
 	html{
-		height:180vh;
+		height:140vh;
 		width:100%;
 	}
 
@@ -200,7 +200,7 @@ a {
     background: -webkit-linear-gradient(rgb(255, 0, 255), rgb(242, 67, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+    text-decoration: none;
   }
 
   .logo{
@@ -210,6 +210,35 @@ a {
     -webkit-text-fill-color: transparent;
     font-family: ND LOGOS;
     padding-left: 20px;
+  }
+};
+
+@media screen and (max-width: 720px) {
+	html{
+		height:180vh;
+		width:100%;
+	}
+
+ .cards{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    margin-left:90px;
+    justify-content: center;
+ }
+
+  
+
+  .nav-link {
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
+    position: relative;
+    background: -webkit-linear-gradient(rgb(255, 0, 255), rgb(242, 67, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-decoration: none;
   }
+
+  
 };

@@ -265,6 +265,15 @@ header{
 }
 
 
+@media screen and (max-width: 990px) {
+	html{
+    height:154vh;
+	  width:100%;
+  }
+
+ 
+}
+
 @media screen and (max-width: 780px) {
 	html{
     height:134vh;
@@ -292,7 +301,7 @@ header{
     width: 270px;
     height: 75px;
     margin-top: 180px;
-    margin-left: 220px;
+    margin-left: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -326,7 +335,7 @@ header{
     width: 270px;
     height: 75px;
     margin-top: 140px;
-    margin-left: 130px;
+    margin-left: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
